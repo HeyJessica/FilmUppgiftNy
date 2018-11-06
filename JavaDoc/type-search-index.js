@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.example.vginlamningsuppg2java","l":"Film"},{"p":"com.example.vginlamningsuppg2java","l":"Filmer"},{"p":"com.example.vginlamningsuppg2java","l":"Serie"},{"p":"com.example.vginlamningsuppg2java","l":"Serier"},{"p":"com.example.vginlamningsuppg2java","l":"VgInlamningsuppg2Java"}]
