@@ -2,6 +2,13 @@ package com.example.vginlamningsuppg2java;
 
 import java.util.Scanner;
 
+/**
+ * A simple program that lists movies and series
+ * @author  Jessica Gabrielsson
+ * @version 1.0
+ * @since   2018-10-31
+ */
+
 public class VgInlamningsuppg2Java {
     private static Scanner scan = new Scanner(System.in);
     private static Filmer filmer = new Filmer();
@@ -19,7 +26,7 @@ public class VgInlamningsuppg2Java {
         } else {
             printSerieActions();
         }
-        // printActions();
+
         while (!quit) {
                 System.out.println("\nVälj: (5 för att visa val)");
 
@@ -77,6 +84,10 @@ public class VgInlamningsuppg2Java {
         }
     }
 
+    /**
+     * The method creates a new film object
+     * based on questions answered by the user
+     */
     private static void addNewFilm() {
         System.out.println("Skriv in namnet på din film: ");
         String name = scan.nextLine();
@@ -89,7 +100,10 @@ public class VgInlamningsuppg2Java {
             System.out.println("Kan inte lägga till, " + name + " finns redan.");
         }
     }
-
+    /**
+     * The method creates a new serie object
+     * based on questions answered by the user
+     */
     private static void addNewSerie() {
         System.out.println("Skriv in namnet på serien: ");
         String name = scan.nextLine();
@@ -107,6 +121,9 @@ public class VgInlamningsuppg2Java {
         }
     }
 
+    /**
+     * The method updates a film selected by the user
+     */
     private static void updateFilm() {
         System.out.println("Skriv in namnet på filmen som skall uppdateras: ");
         String name = scan.nextLine();
@@ -135,7 +152,9 @@ public class VgInlamningsuppg2Java {
             System.out.println("Gick inte att updatera.");
         }
     }
-
+    /**
+     * The method updates a serie selected by the user
+     */
     private static void updateSerie() {
         System.out.println("Skriv in namnet på serien som skall uppdateras: ");
         String name = scan.nextLine();
@@ -169,7 +188,9 @@ public class VgInlamningsuppg2Java {
         }
     }
 
-
+    /**
+     * The method removes a film selected by the user
+     */
     private static void removeFilm() {
         System.out.println("Skriv in namnet på filmen som skall tas bort: ");
         String name = scan.nextLine();
@@ -185,7 +206,9 @@ public class VgInlamningsuppg2Java {
             System.out.println("Kan inte ta bort filmen. Gör ett nytt val");
         }
     }
-
+    /**
+     * The method removes a serie selected by the user
+     */
     private static void removeSerie() {
         System.out.println("Skriv in namnet på serien som ska tas bort: ");
         String name = scan.nextLine();
@@ -201,7 +224,9 @@ public class VgInlamningsuppg2Java {
             System.out.println("Kan inte ta bort serien, gör ett nytt val");
         }
     }
-
+    /**
+     * The method prints out all options regarding films
+     */
     private static void printFilmActions() {
         System.out.println("\nVälj:");
         System.out.println("0  - Stäng av\n" +
@@ -211,7 +236,9 @@ public class VgInlamningsuppg2Java {
                 "4  - Ta bort en inlagd film\n" +
                 "5  - Visa lista över alla val.");
     }
-
+    /**
+     * The method prints out all options regarding series
+     */
     private static void printSerieActions() {
         System.out.println("\nVälj:");
         System.out.println("0  - Stäng av\n" +
